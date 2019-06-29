@@ -5,9 +5,13 @@ git commit --amend
 
 this command took me to the "window" of the terminal that comes up whenever I run:
 git commit
-
 I got this info. from https://help.github.com/en/articles/changing-a-commit-message
 
 Task 7
 
 At this point I've been unable to locate the commit with the --no-mouse option.  After cloning the repository onto my laptop, I changed my directory to the fzf folder and ran "git log" to look through the commits.  I ran "git show COMMIT_SHA" for every logged commit, but was unable to find the --no-mouse in any of them
+
+Task 8
+
+I ran the command "git diff" to see the changes made to the READMe.txt relative to the last commit.
+I got this info from https://stackoverflow.com/questions/35978550/how-to-show-uncommitted-changes-in-git/35978722
