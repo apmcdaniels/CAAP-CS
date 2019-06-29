@@ -1,1 +1,9 @@
 Task 6
+
+To change the commit message w/o creating another commit, I used the following command:
+git commit --amend
+
+this command took me to the "window" of the terminal that comes up whenever I run:
+git commit
+
+I got this info. from https://help.github.com/en/articles/changing-a-commit-message
