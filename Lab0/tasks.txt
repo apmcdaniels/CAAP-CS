@@ -15,3 +15,8 @@ Task 8
 
 I ran the command "git diff" to see the changes made to the READMe.txt relative to the last commit.
 I got this info from https://stackoverflow.com/questions/35978550/how-to-show-uncommitted-changes-in-git/35978722
+
+Task 9
+
+In order to create a commit that deleted the mistake.txt w/o deleting the history, I ran the command "git revert HEAD"
+I got this info from https://github.com/pvdlg/conventional-commit-types and https://www.atlassian.com/git/tutorials/undoing-changes/git-revert
