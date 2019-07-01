@@ -20,3 +20,14 @@ Task 9
 
 In order to create a commit that deleted the mistake.txt w/o deleting the history, I ran the command "git revert HEAD"
 I got this info from https://github.com/pvdlg/conventional-commit-types and https://www.atlassian.com/git/tutorials/undoing-changes/git-revert
+
+Task 10
+
+At first, I attempted to run git revert for the 2 commits that had the mistakes in them by typing the command: git revert 732e28e a679b2f --no-commit
+
+When I did this, something went wrong! the commit 732e28e came up as un-merged.  to solve this, I ran "git revert --abort" to cancel the reversion. I then switched up my approach and ran the command twice:
+git revert HEAD -n
+git revert 732e28eb166470e5fbe033db6a571174f351da4d -n
+
+I then created a single commit for the two reversions.  Even though I ultimately had to run the revert command twice, I still understood how to use the command for multiple commits.
+I got this info from https://stackoverflow.com/questions/10415565/how-to-revert-multiple-commits-as-part-of-a-single-commit/34146773# and https://www.atlassian.com/git/tutorials/undoing-changes/git-revert
