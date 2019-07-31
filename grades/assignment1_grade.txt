@@ -1,12 +1,23 @@
 Assignment 1
 CAAP CMSC 101, Summer 2019
 
-1. Hello world:						_/2 pts
-2. Converter:						_/6 pts
-3. Unit Conversion:					_/6 pts
-4. Slope:							_/10 pts
-5. Fibonacci Sequence:				_/6 pts
-6. Part 2 - Change:					_/20 pts
-7. Part 4:							_/10 pts
+1. Hello world:						2/2 pts
+2. Converter:						6/6 pts
+3. Unit Conversion:					6/6 pts
+4. Slope:							10/10 pts
+5. Fibonacci Sequence:				2/6 pts
+6. Part 2 - Change:					18/20 pts
+7. Part 4:							7/10 pts
 
-Total								_/60 pts
+Readme file							-5/0 pts
+
+Total								46/60 pts
+
+Comments:
+	-P5: fibonnaci sequence is not called and therefore doesn't run
+		-It asks user for number at every recursive call (user is unaware of what's happening)
+	-P6: Change function doesn't cover some edge cases (e.g. 0.009999999 should return 1 coin)
+	-P7: Q2 asks for an alternative method, not how well a greedy algorithm would work.
+
+	-Your README should include how you run your specific program, what version of python you are using, and explanation of what each of your programs do.
+	-MAKE SURE TO DOCUMENT ALL OF YOUR CODE! 
