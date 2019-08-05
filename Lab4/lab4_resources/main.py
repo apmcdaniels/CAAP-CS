@@ -47,8 +47,8 @@ def box(intDim):
 
 # Here is an example of how to draw a box using the box function
 # Comment these two lines out when you draw your own images
-box(boxSize)
-turtle.done()
+#box(boxSize)
+#turtle.done()
 
 # Challenge functions (2 bonus pts each)
 # def save_image(): # saves the screen to an image/vector file
@@ -77,18 +77,19 @@ turtle.done()
 # and a second with the pixel values (list of lists).
 # The function returns both lists
 def load_art(path):
-    raise NotImplementedError
-
     file = open(path, 'r')
-    print file.read()
+    lines = file.read().splitlines()
 
+    color_palette = split[0]
+    ea_color = color_palette.split(",")
 
-    file.close()
+    pixel_values = split[1:]
+    ea_pix = pixel_values.split(",")
 
-    color_palette = file.readlines(1)
-    pixel_values = file.readlines(2)
-
-
+    pix_list = []
+    with open(path, 'r') as file:
+        for ea_pix in file:
+            pix_list.append(ea_pix)
 
 
     return color_palette, pixel_values
@@ -96,7 +97,12 @@ def load_art(path):
 # This function takes a pallet and pixel list (matrix) to draw the picture
 # You are to write this function
 def draw(pallet, pixels):
-	raise NotImplementedError
+    turtle.color_palette(pallet)
+
+    for i in range(0, pixels):
+        turtle.forward(50)
+        turtle.left(360/pixels)
+    turtle.forward(75)
 
 # Should give the user a list of the possible drawing pieces you have and ask which one to draw
 # After drawing the piece, ask the if they would like to draw a different piece until they quit the program.
